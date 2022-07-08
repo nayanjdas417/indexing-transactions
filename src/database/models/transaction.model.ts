@@ -1,6 +1,10 @@
 import * as mongoose from 'mongoose';
 
 const transactionSchema = new mongoose.Schema({
+  transactionHash: {
+    type: String,
+    required: true
+  },
   blockHash: {
     type: String,
     required: true

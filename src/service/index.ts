@@ -54,6 +54,7 @@ export default class IndexingService {
       } = transactionDetails;
 
       await TransactionDBService.insertTransaction({
+        transactionHash,
         blockHash,
         blockNumber,
         from,
